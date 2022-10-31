@@ -1,0 +1,14 @@
+.block-portfolio-pieces{
+  background-color: blue;
+}
+.block-portfolio-pieces.is-image-thumbnail .portfolio-pieces,
+.block-portfolio-pieces.is-image-medium .portfolio-pieces{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.block-portfolio-pieces .wp-post-image.size-thumbnail,
+.block-portfolio-pieces .wp-post-image.size-medium{
+  float: none;
+}

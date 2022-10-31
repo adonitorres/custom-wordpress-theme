@@ -1,0 +1,117 @@
+{
+  "version" : 2,
+  "settings" : {
+    "color" : {
+      "custom" : false,
+      "defaultPalette" : false,
+      "customGradients" : false,
+      "defaultGradients" : false,
+      "customDuotone" : false,
+      "defaultDuotone" : false,
+      "palette" : [
+        {
+          "name" : "Dark Mode Header and Footer Background Color",
+          "slug" : "dark-blue",
+          "color" : "#1B242F"
+        },
+        {
+          "name" : "Dark Mode Background Color",
+          "slug" : "medium-blue",
+          "color" : "#252934"
+        },
+        {
+          "name" : "Dark Mode Inactive Link Color",
+          "slug" : "light-blue",
+          "color" : "#347ED6"
+        },
+        {
+          "name" : "Dark Mode Active Link Color",
+          "slug" : "lighter-blue",
+          "color" : "#0074FF"
+        },
+        {
+          "name" : "Dark Mode Text Color",
+          "slug" : "white",
+          "color" : "#DADADA"
+        },
+        {
+          "name" : "Dark Mode Black Color",
+          "slug" : "black",
+          "color" : "#000000"
+        }
+      ],
+      "gradients" : [
+        {
+          "name" : "Dark Mode",
+          "slug" : "dark-mode",
+          "gradient" : "linear-gradient( rgba(27,36,47,1) 0%,rgba(37,41,52,1) 33%,rgba(52,126,214,1)"
+        }
+      ],
+      "duotone" : [
+      {
+        "name" : "Blue and Black",
+        "slug" : "blue-and-black",
+        "colors" : [ "#347ED6", "1B242F" ]
+      }
+      ]
+    },
+    "typography" : {
+      "fontFamilies" : [
+        {
+          "name" : "Heading Font",
+          "slug" : "heading-font",
+          "fontFamily" : "Encode Sans SC, sans-serif"
+        },
+        {
+          "name" : "Sub Heading Font",
+          "slug" : "sub-heading-font",
+          "fontFamily" : "Encode Sans, sans-serif"
+        },
+        {
+          "name" : "Body Font",
+          "slug" : "body-font",
+          "fontFamily" : "'Open Sans', sans-serif"
+        }
+      ]
+    },
+    "layout" : {
+      "contentSize" : "928px",
+      "wideSize" : "1150px"
+    },
+    "spacing" :{
+      "blockGap" : "1rem",
+      "margin" : true,
+      "padding" : true,
+      "units" : [ "%", "vw", "vh", "rem", "em" ]
+    }
+  },
+  "styles" : {
+    "color" : {
+      "text" : "var(--wp--preset--color--white)",
+      "background" : "var(--wp--preset--color--sub-heading-font)"
+    },
+    "typography" : {
+      "fontFamily" : "var(--wp--preset--font-family--body-font)",
+      "fontWeight" : "normal"
+    },
+    "blocks" : {
+      "core/site-title" : {
+        "typography" : {
+          "fontFamily" : "var(--wp--preset--font-family--heading-font)",
+          "fontWeight" : "bold"
+        }
+      },
+      "core/heading" : {
+        "fontFamily" : "var(--wp--preset--font-family--heading-font)",
+        "fontWeight" : "normal"
+      },
+      "core/button" : {
+        "typography" : {
+          "fontFamily" : "var(--wp--preset--font-family--heading-font)",
+          "fontWeight" : "normal",
+          "textTransfor" : "uppercase"
+        }
+      }
+    }
+  }
+}

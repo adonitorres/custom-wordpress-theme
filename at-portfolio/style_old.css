@@ -1,0 +1,281 @@
+/*
+Theme Name: AT Portfolio
+Text Domain: at-portfolio
+Version: 0.1
+Tested up to: 6.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: This is a theme for the portfolio of a web developer. More information will be added.
+Author: Adoni Torres
+Author URI: https://www.adoni.dev/
+Theme URI: https://www.adoni.dev/themes/at-portfolio/
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+
+------------------
+TABLE OF CONTENTS
+------------------
+== CSS reset
+    http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+== Fonts
+== Global
+== Header
+== Main
+== Footer
+*/
+
+/*
+== CSS reset
+*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+== Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;600&family=Encode+Sans:wght@500&family=Open+Sans&display=swap');
+
+/*
+font-family: 'Encode Sans', sans-serif;
+font-family: 'Encode Sans SC', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/*
+== Global
+*/
+body{
+	background-color: #252934;
+	color: #DADADA;
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3{
+	font-family: 'Encode Sans SC', sans-serif;
+}
+h4, h5, h6 {
+	font-family: 'Encode Sans', sans-serif;
+}
+h1{
+	font-size: 3rem;
+	line-height: 4rem;
+}
+h2{
+	font-size: 2.5rem;
+	line-height: 3.33rem;
+}
+h3{
+	font-size: 2rem;
+	line-height: 2.66rem;
+}
+h4{
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+p{
+	font-size: 1rem;
+	line-height: 1.33rem;
+}
+a{
+	display: block;
+	text-decoration: none;
+	color: #DADADA;
+}
+a:hover, a:focus{
+	color: #0074FF;
+}
+.flex{
+	display: flex;
+}
+.grid{
+	display: grid;
+}
+
+/*
+== Header
+*/
+header{
+	background-color: #1B242F;
+}
+body.home div.hero{
+	background: no-repeat center / contain url(../../uploads/2022/07/img_placeholder.svg);
+	height: 40vw;
+}
+header h1{
+	text-indent: -999rem;
+}
+header h1 a{
+	display: block;
+	background-color: #347ED650;
+	border-radius: 50%;
+	width: 2rem;
+	height: 2rem;
+}
+header h1 a:hover,
+header h1 a:focus{
+	background-color: #0074FF;
+}
+header nav.topnav ul{
+	position: relative;
+	width: 60vw;
+	max-width: 768px;
+	margin: 0 auto;
+	justify-content: center;
+}
+header nav.topnav ul li{
+	align-self: center;
+	max-width: 20%;
+}
+header nav.topnav ul li:first-of-type a{
+	margin: .31rem 3rem;
+}
+header nav.topnav ul li:not(:first-of-type) a{
+	display: block;
+	font-family: 'Encode Sans SC', sans-serif;
+	color: #DADADA75;
+	padding: .75rem 3rem;
+	margin: 0 auto;
+	max-width: 100%;
+	border: solid 1px transparent;
+}
+header nav.topnav ul li:not(:first-of-type) a:hover, 
+header nav.topnav ul li:not(:first-of-type) a:focus{
+	background-color: #347ED6;
+	color: #DADADA;
+	box-shadow: 2px 2px 4px #00000050;
+	border: solid 1px #0074FF;
+}
+
+/*
+== Main
+*/
+main.content{
+	padding: 1rem;
+}
+div.hero{
+	background: no-repeat center / contain url(../../uploads/2022/07/screenshot_expanse.jpg);
+	height: 40vw;
+}
+article.about{
+	grid-template-areas:
+		"a a"
+		"b c"
+		"b d";
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
+article.about h2{
+	grid-area: a;
+	margin: 0 auto;
+}
+article.about p{
+	grid-area: c;
+	padding: 2rem 1rem 0;
+}
+article.about div.profile-pic{
+	grid-area: b;
+	margin: 0 auto;
+	padding: 2rem;
+	text-indent: -999rem;
+}
+article.about div.profile-pic a{
+	display: block;
+	background-color: #347ED650;
+	border: solid 6px #347ED6;
+	border-radius: 50%;
+	width: 20vw;
+	height: 20vw;
+}
+article.about ul.skills{
+	grid-area: d;
+	flex-wrap: wrap;
+	padding: .5rem 1rem .5rem 2rem;
+}
+article.about ul.skills li{
+	width: 45%;
+	list-style-type:"➛ ";
+	margin-left: 1rem;
+}
+article.about ul.skills li a{
+	line-height: 2rem;
+}
+article.page{
+	margin: 0 auto;
+	width: 25vw;
+	border: solid 1px red;
+}
+section.projects{
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 1rem 2rem;
+	width: 80vw;
+}
+section.projects > h2{
+	width: 100%;
+	text-align: center;
+}
+
+article.project{
+	grid-template-areas:
+		"a b"
+		"c b"
+		"d d";
+	margin: 0 auto;
+	max-width: 80vw;
+	border: solid 1px red;
+}
+section.software-used{
+	grid-area: a;
+}
+section.project-description{
+	grid-area: b;
+}
+section.screenshots{
+	grid-area: d;
+	margin: 0 auto;
+}
+li.screenshot a{
+	background: no-repeat center / cover url(../../uploads/2022/07/img_placeholder.svg);
+	height: 300px;
+	width: 300px;
+}
+
+/*
+== Footer
+*/
+footer{
+	margin: 0 auto;
+	background-color: #1B242F;
+}
